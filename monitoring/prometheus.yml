@@ -1,3 +1,4 @@
+ HEAD
 global:
   scrape_interval: 5s
 scrape_configs:
@@ -5,3 +6,12 @@ scrape_configs:
     static_configs:
       - targets: ["api:8000"]
     metrics_path: /metrics
+
+global:
+  scrape_interval: 5s
+scrape_configs:
+  - job_name: "iris-api"
+    static_configs:
+      - targets: ["api:8000"]
+    metrics_path: /metrics
+2746f93 (initial commit)
